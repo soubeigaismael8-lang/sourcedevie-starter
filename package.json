@@ -6,7 +6,7 @@
     "apps/*",
     "services/*",
     "packages/*"
-  ],
+  ]
   "scripts": {
     "dev": "npm run dev:web-shell",
     "dev:web-shell": "cd apps/web-shell && npm run dev",
