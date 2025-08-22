@@ -1,4 +1,4 @@
-{
+op{
   "name": "svpay",
   "version": "1.0.0",
   "private": true,
@@ -31,7 +31,7 @@
     "@radix-ui/react-toast": "1.1.5",
     "zustand": "4.4.0",
     "date-fns": "2.30.0",
-    "@sentry/nextjs": "^8.0.0",
+    "@sentry/nextjs": "^8.0.0"
   },
   "devDependencies": {
     "@types/node": "20.8.0",
