@@ -31,7 +31,7 @@
     "@radix-ui/react-toast": "1.1.5",
     "zustand": "4.4.0",
     "date-fns": "2.30.0",
-    "@sentry/nextjs": "7.70.0"
+    "@sentry/nextjs": "7.70.0"`
   },
   "devDependencies": {
     "@types/node": "20.8.0",
