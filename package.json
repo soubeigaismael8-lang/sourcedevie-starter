@@ -1,5 +1,4 @@
-# Créez un fichier package.json corrigé
-cat > package.json << EOF
+EOF
 {
   "name": "svpay",
   "version": "1.0.0",
