@@ -1,3 +1,5 @@
+# Créez un fichier package.json corrigé
+cat > package.json << EOF
 {
   "name": "svpay",
   "version": "1.0.0",
@@ -6,32 +8,29 @@
     "apps/*",
     "services/*",
     "packages/*"
-  ]
+  ],
   "scripts": {
     "dev": "npm run dev:web-shell",
     "dev:web-shell": "cd apps/web-shell && npm run dev",
     "dev:svpay": "cd apps/svpay && npm run dev",
     "build": "npm run build --workspaces",
     "test": "npm run test --workspaces",
-    "test:watch": "npm run test:watch --workspaces",
+    "testwatch": "npm run test:watch --workspaces",
     "test:coverage": "npm run test:coverage --workspaces",
     "e2e": "npm run e2e --workspaces",
     "lint": "npm run lint --workspaces",
-    "lint:fix": "npm run lint:fix --workspaces",
+    "lintfix": "npm run lint:fix --workspaces",
     "format": "prettier --write .",
-    "format:check": "prettier --check .",
+    "formatcheck": "prettier --check .",
     "type-check": "npm run type-check --workspaces",
     "security:audit": "npm audit --audit-level moderate",
     "security:scan": "snyk test",
-    "perf:lighthouse": "lighthouse http://localhost:3000 --output=html --output-path=./report",
+    "perf:lighthouse": "lighthouse http://localhost:3000 --output=html --output-path=./lighthouse-report.html",
     "docker:build": "docker-compose build",
     "docker:up": "docker-compose up -d",
     "docker:down": "docker-compose down",
     "deploy:staging": "scripts/deploy/deploy-staging.sh",
-    "deploy:production": "scripts/deploy/deploy-production.sh" 
-},
-    "overrides": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "deploy:production": "scripts/deploy/deploy-production.sh"
   }
- }
+}
+EOF
