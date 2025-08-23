@@ -23,7 +23,7 @@
     "type-check": "npm run type-check --workspaces",
     "security:audit": "npm audit --audit-level moderate",
     "security:scan": "snyk test",
-    "perf:lighthouse": "lighthouse http://localhost:3000 --output=html --output-path=./reports/lighthouse.html",
+    "perf:lighthouse": "lighthouse http://localhost:3000 --output=html --output-path=./report",
     "docker:build": "docker-compose build",
     "docker:up": "docker-compose up -d",
     "docker:down": "docker-compose down",
