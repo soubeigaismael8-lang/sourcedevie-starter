@@ -29,5 +29,9 @@
     "docker:down": "docker-compose down",
     "deploy:staging": "scripts/deploy/deploy-staging.sh",
     "deploy:production": "scripts/deploy/deploy-production.sh" 
-}
+},
+    "overrides": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
  }
