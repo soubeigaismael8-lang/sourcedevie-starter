@@ -28,6 +28,6 @@
     "docker:up": "docker-compose up -d",
     "docker:down": "docker-compose down",
     "deploy:staging": "scripts/deploy/deploy-staging.sh",
-    "deploy:production": "scripts/deploy/deploy-production.sh"
-  }
+    "deploy:production": "scripts/deploy/deploy-production.sh" 
 }
+ }
